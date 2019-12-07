@@ -10,7 +10,8 @@ public class Fraction2 {
 		int n[] = new int[5];
 		int d[] = new int[5];
 		for (int i = 0; i < n.length; i++) {
-			System.out.println("==============");
+			String countFraction = "============== "+Integer.toString(i+1)+" дробь";
+			System.out.println(countFraction);
 			n[i] = sc.nextInt();
 			d[i] = sc.nextInt();
 		}
@@ -25,6 +26,7 @@ public class Fraction2 {
 			rez2d = rez2d * d[i];
 		}
 		System.out.println("Результат 1:");
+		System.out.println("(сумма дробей)");
 		// печатаем в десятичном виде
 		System.out.println(1.0 * rez1n / rez1d);
 		if (rez1n / rez1d == 0) {
@@ -39,6 +41,7 @@ public class Fraction2 {
 			System.out.println("   " + rez1d);
 		}
 		System.out.println("Результат 2:");
+		System.out.println("(произведение дробей)");
 		// печатаем в десятичном виде
 		System.out.println(1.0 * rez2n / rez2d);
 		if (rez2n / rez2d == 0) {
